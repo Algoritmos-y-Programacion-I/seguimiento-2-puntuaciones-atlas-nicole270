@@ -25,20 +25,43 @@ public class AtlasPuntuaciones {
 	public void run()
 	{
 		// Declaracion de todas las variables a usar en el programa
+		int numjugadores, numrondas;
 
+		System.out.println("Ingrese el numero de jugadores.");
+		numjugadores = escaner.nextInt();
+		int[] puntaje = new int[numjugadores];
 
-		// Notificacion al usuario de la solicitud de dato
+		System.out.println("Ingrese el numero de rondas.");
+		numrondas = escaner.nextInt();
 
-		// Capturamos el dato con nuestro Scanner (que se llama, escaner)
+		for(int i=0; i<numjugadores; i++){
+			for(int j=0; j<numrondas; j++){
+				System.out.println("Puntaje jugador " + (i+1) + " en la ronda "+ (j+1));
+				puntaje[i] = escaner.nextInt();
+			}
+			
+		}
 
-
-
-		// Realizamos los cálculos delegandolos a los métodos
-
-
+	
 		// Notificación al usuario de los resultados
+		int puntajetotal, calcularPromedio;
 
+        
+		System.out.println("El resultado del torneo es: ");
 
+		
+		
+		 int suma = 0;
+
+        for(int i=0; i<numjugadores; i++){
+			for(int j=0; j<numrondas; j++){
+					
+					System.out.println(" Puntaje del jugador " + (i+1) + suma);
+					System.out.print("> ");
+			
+			}
+		
+		}
 	}
 
 	public static void main(String[] args) {
@@ -52,7 +75,7 @@ public class AtlasPuntuaciones {
 	 * @return 
 	 */
     public int calcularSumaTotal(int[] numeros) {
-        // Completar
+        return 0;
     }
 
 	/**
@@ -61,7 +84,7 @@ public class AtlasPuntuaciones {
 	 * @return 
 	 */
     public double calcularPromedio(int[] numeros) {
-        // Completar
+        return 0;
     }
 
 	/**
@@ -70,7 +93,7 @@ public class AtlasPuntuaciones {
 	 * @return 
 	 */
     public double encontrarMayor(double[] numeros) {
-        // Completar
+        return 0;
     }
 
 	
